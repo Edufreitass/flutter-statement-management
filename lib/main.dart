@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_state_management/src/bloc/bloc_page.dart';
+import 'package:flutter_state_management/src/getx/getx_page.dart';
 
 import 'src/provider/provider_page.dart';
 
@@ -14,7 +15,8 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: ProviderPage(),
-      home: BlocPage(),
+      // home: BlocPage(),
+      home: GetxPage(),
     );
   }
 }
