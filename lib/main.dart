@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_state_management/src/bloc/bloc_page.dart';
 
 import 'src/provider/provider_page.dart';
 
@@ -12,7 +13,8 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ProviderPage(),
+      // home: ProviderPage(),
+      home: BlocPage(),
     );
   }
 }
