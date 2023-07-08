@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_state_management/src/bloc/bloc_page.dart';
 import 'package:flutter_state_management/src/getit/getit_page.dart';
 import 'package:flutter_state_management/src/getx/getx_page.dart';
+import 'package:flutter_state_management/src/mobx/mobx_page.dart';
 import 'package:flutter_state_management/src/riverpod/riverpod_page.dart';
 
 import 'src/provider/provider_page.dart';
@@ -20,7 +21,8 @@ class AppWidget extends StatelessWidget {
       // home: BlocPage(),
       // home: GetxPage(),
       // home: RiverpodPage(),
-      home: GetItPage(),
+      // home: GetItPage(),
+      home: MobXPage(),
     );
   }
 }
