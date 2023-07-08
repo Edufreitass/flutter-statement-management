@@ -13,6 +13,8 @@ class HomeRiverpod extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Riverpod Page')),
+      // It is best practice to put your Consumer widgets as deep in the tree as possible.
+      // You don't want to rebuild large portions of the UI just because some detail somewhere changed.
       body: Consumer(
         builder: (context, ref, child) {
           final state = ref.watch(riverpodProvider);
